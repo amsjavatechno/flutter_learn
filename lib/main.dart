@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ip_geo_lookup/pages/home.dart';
+import 'package:ip_geo_lookup/pages/ip_lookup.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,16 +7,15 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'IP Tracker App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: IpLookupApp(),
     );
   }
 }
